@@ -5,9 +5,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.babu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.table {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.row {
+  display: flex;
+  border: 1px solid black;
+}
+.column {
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 25px;
+}
+.col-heading {
+  font-size: large;
+  font-weight: bold;
+  width: 150px;
+}
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin : 5px;
+}
+.has-items {
+  padding : 10px;
+  border: 1px solid black;
+}
+.big-button {
+  font-size: large;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.add-button {
+  color: rgb(1, 61, 1);
+  background-color: greenyellow;
+}
+.add-button:hover {
+  color: white;
+  background-color: green;
+}
+.delete-button {
+  color:rgb(82, 1, 1);
+  background-color: lightcoral;
+}
+.delete-button:hover {
+  color:white;
+  background-color: red;
+}
+.load-button {
+  color:brown;
+  background-color:rgb(255, 216, 132);
+}
+.load-button:hover {
+  color:white;
+  background-color:orangered;
+}
+.which-button-text {
+  font-size: larger;
+  padding: 5px;
+}
+.option-buttons
+{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
 }

@@ -1,7 +1,9 @@
+import Table from "./Table";
+
 function App() {
   return (
     <div className="App">
-      App will Appear here..
+      <Table />
     </div>
   );
 }

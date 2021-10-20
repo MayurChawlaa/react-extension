@@ -6,7 +6,7 @@
   "manifest_version" : 3,
   "permissions": ["tabs","storage", "activeTab", "scripting"],
   "action": {
-      "default_popup" : "index.html"
+      "default_popup" : "popup.html"
   },
   "icons": {
       "16": "/images/get_started16.png",

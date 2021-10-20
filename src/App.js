@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="App">
-      Inside App
+      App will Appear here..
     </div>
   );
 }

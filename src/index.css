@@ -1,3 +1,11 @@
+:root {
+  --primary-color : #DE970B;
+  --secondary-color : #F6BE00;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,96 +13,130 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.babu-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#root{
+  height:100%;
   width: 100%;
 }
-.table {
-  width: 90%;
+.App {
+  height:100%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 248, 146, 0.527);
+  /* background-color: lightgoldenrodyellow; */
+}
+.App > .AppHeading {
+  margin: 0px;
+  padding: 20px 0px;
+  color: var(--primary-color);
+}
+.container {
+  width: 100%;  
+}
+.containerForm {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-}
-.row {
-  display: flex;
-  border: 1px solid black;
-}
-.column {
-  text-align: center;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  width: 25px;
 }
-.col-heading {
+.inputTodo {
+  width:65%;
+  border: 2px solid var(--secondary-color);
+  padding:1rem;
   font-size: large;
+  border-radius: 0.5rem;
+}
+.inputTodo:focus{
+  outline: 0;
+}
+.addTodoButton {
+  width: fit-content;
+  margin-top: 25px;
   font-weight: bold;
-  width: 150px;
-}
-.button-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin : 5px;
-}
-.has-items {
-  padding : 10px;
-  border: 1px solid black;
-}
-.big-button {
+  padding: 0.75rem 1.2rem;
   font-size: large;
-  padding: 5px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-.add-button {
-  color: rgb(1, 61, 1);
-  background-color: greenyellow;
-}
-.add-button:hover {
+  background-color: var(--secondary-color);
   color: white;
-  background-color: green;
+  border-radius: 0.5rem;
+  border-color: var(--secondary-color);
 }
-.delete-button {
-  color:rgb(82, 1, 1);
-  background-color: lightcoral;
+.addTodoButton:hover {
+  background-color: white;
+  color: var(--primary-color);  
 }
-.delete-button:hover {
-  color:white;
-  background-color: red;
+.todoListContainer {
+  margin-top: 50px;
 }
-.load-button {
-  color:brown;
-  background-color:rgb(255, 216, 132);
-}
-.load-button:hover {
-  color:white;
-  background-color:orangered;
-}
-.which-button-text {
-  font-size: larger;
-  padding: 5px;
-}
-.option-buttons
-{
+.list-container {
   display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.list-container > div {
+  width : 65%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248, 255, 219);
+  border: 1.5px solid var(--secondary-color);
+  border-radius: 0.5rem;
+}
+.list-item {
+  padding : 0rem 1rem;
+  color: var(--primary-color);
+}
+.list-item:focus {
+  outline: 0;;
+}
+.list-deletebutton {
+  font-weight: bold;
+  padding: 0.75rem 1.2rem;
+  font-size: larger;
+  background-color: var(--secondary-color);
+  color: white;
+  border-top-left-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border-color: var(--secondary-color);
+}
+.list-deletebutton:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+.saveButton {
+  width: fit-content;
+  margin-top: 25px;
+  margin-right: 25px;
+  font-weight: bold;
+  padding: 0.75rem 1.2rem;
+  font-size: large;
+  background-color: lightgoldenrodyellow;
+  color: green;
+  border-radius: 0.5rem;
+  border-color: green;
+}
+.saveButton:hover {
+  background-color: green;
+  border-color: green;
+  color: white;
+}
+.loadButton {
+  width: fit-content;
+  margin-top: 25px;
+  margin-left: 25px;
+  font-weight: bold;
+  padding: 0.75rem 1.2rem;
+  font-size: large;
+  background-color: lightgoldenrodyellow;
+  color: var(--secondary-color);
+  border-radius: 0.5rem;
+  border-color: var(--secondary-color);
+}
+.loadButton:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
 }

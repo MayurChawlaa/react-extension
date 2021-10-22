@@ -1,6 +1,6 @@
 {
-  "name" : "Rishibh",
-  "description" : "Improvement Chart",
+  "name" : "Todo List",
+  "description" : "Checklist App",
   "author" : "Mayur Chawla",
   "version" : "1.0",
   "manifest_version" : 3,

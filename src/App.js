@@ -1,9 +1,10 @@
-import Table from "./Table";
+import Todo from "./Todo";
 
 function App() {
   return (
     <div className="App">
-      <Table />
+      <h1 className="AppHeading">Todo List</h1>
+      <Todo />
     </div>
   );
 }
